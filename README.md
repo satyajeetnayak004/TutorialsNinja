@@ -1,4 +1,3 @@
-```markdown
 # TutorialsNinja
 
 Welcome to the TutorialsNinja repository! This project is a comprehensive tutorial on using OpenCart, a free and open-source e-commerce platform for online merchants. The tutorials cover various aspects of OpenCart, providing insights into its features, customization, and usage.
