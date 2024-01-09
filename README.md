@@ -15,21 +15,46 @@ Welcome to the TutorialsNinja repository! This project is a comprehensive tutori
 
 ## Overview
 
-OpenCart serves as a professional and reliable foundation for building successful online stores. Whether you're a seasoned web developer or a shop owner launching your business online for the first time, OpenCart provides a user-friendly interface and extensive features to customize your store. The tutorials aim to guide you through utilizing OpenCart's tools to maximize your online shop's potential.
+As part of the TutorialsNinja project, Pavan has been assigned to test various functionalities of the 'https://tutorialsninja.com/demo/' web application. This document serves as a high-level test planning document, outlining the project's scope, test strategy, schedule, resource requirements, deliverables, and more.
 
-## Requirements
+## Scope
 
-Before diving into OpenCart, ensure that the following technical requirements are met:
+The scope of the project includes testing the following features of 'https://tutorialsninja.com/demo/' web application:
 
-- Web server for making the OpenCart store publicly available on the web.
-- Domain names and hosting services (PHP 5.4, jQuery 2.1.1, JavaScript, Database - MySQL suggested, Web Server - Apache suggested).
-- OpenCart requires specific extensions to be enabled for proper installation.
+### Inclusions
 
-## Opencart Frontend
+- Register
+- Login & Logout
+- Forgot Password
+- Search
+- Product Compare
+- Product Display Page
+- Add to Cart
+- Wish List
+- Shopping Cart
+- Currencies
+- Home Page
+- Checkout Page
+- My Account Page
+- Order History Page
+- Downloads Page
+- Contact Us Page
+- Menu Options
+- Footer Options
+- Category Pages
 
-This document serves as an introduction to the OpenCart default store front, offering insights into how customers view and interact with the store. It covers various aspects of the OpenCart frontend to provide a comprehensive understanding of the user experience.
+## Test Environments
 
-Feel free to explore the tutorials and enhance your knowledge of OpenCart!
+- Windows 11 — Chrome, Firefox, and Edge
 
-**Happy Coding!**
+## Test Automation
+
+- Automation using Selenium and Java.
+- Project contains frameworks such as TestNG and Hybrid.
+
+### Exclusions
+
+- All features not mentioned in 'Inclusions.'
+- Any third-party features or Payment gateways.
+
 ```
