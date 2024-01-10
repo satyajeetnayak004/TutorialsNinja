@@ -12,6 +12,10 @@ public class LoginPage {
     private WebElement  passwordTxt = null;
     @FindBy(xpath = "//input[@value='Login']")
     private WebElement loginBtn = null;
+    @FindBy(xpath = "//a[@title='My Account']")
+    private WebElement myAccount = null;
+    @FindBy(linkText = "Logout")
+    private WebElement logoutOption = null;
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -21,5 +25,10 @@ public class LoginPage {
         emailTxt.sendKeys(userName);
         passwordTxt.sendKeys(password);
         loginBtn.click();
+    }
+
+    public void logout() {
+        myAccount.click();
+        logoutOption.click();
     }
 }

@@ -10,8 +10,8 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class TC001LoginWithValidCredentialTest extends FrameworkScript {
-    @Test()
-    public void login() throws InterruptedException {
+    @Test(dataProvider = "getTestData")
+    public void login(String userName, String password) throws InterruptedException {
         driver.get("https://tutorialsninja.com/demo/");
 
         Thread.sleep(3000);
@@ -22,13 +22,15 @@ public class TC001LoginWithValidCredentialTest extends FrameworkScript {
         Thread.sleep(3000);
 
         LoginPage login = new LoginPage(driver);
-        login.login("teamc@gmail.com", "test1234");
+        login.login(userName, password);
 
         Thread.sleep(5000);
+
+        login.logout();
     }
 
     @DataProvider(name = "getTestData")
     public Object[][] getTest() throws IOException {
-        return ExcelHelper.getTestData("C:\\Users\\satya\\IdeaProjects\\TutorialsNinja\\src\\test\\resources\\TestData.xlsx", "");
+        return ExcelHelper.getTestData("C:\\Users\\satya\\IdeaProjects\\TutorialsNinja\\src\\test\\resources\\TestData.xlsx", "Sheet1");
     }
 }
