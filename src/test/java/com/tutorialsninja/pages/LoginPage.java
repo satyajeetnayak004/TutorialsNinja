@@ -9,7 +9,7 @@ public class LoginPage {
     @FindBy(id = "input-email")
     private WebElement emailTxt = null;
     @FindBy(id = "input-password")
-    private WebElement passwordTxt = null;
+    private WebElement  passwordTxt = null;
     @FindBy(xpath = "//input[@value='Login']")
     private WebElement loginBtn = null;
 

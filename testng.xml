@@ -4,7 +4,7 @@
     <test verbose="2" name="C:/Users/satya/IdeaProjects/TutorialsNinja">
         <parameter name="Browser" value="chrome"/>
         <classes>
-            <class name="com.tutorialsninja.testscripts.TC001LoginWithValidCredentialTest">
+            <class name="com.tutorialsninja.testscripts.login.TC001LoginWithValidCredentialTest">
                 <methods>
                     <include name="login"/>
                 </methods>
