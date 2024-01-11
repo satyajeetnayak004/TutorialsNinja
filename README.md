@@ -1,6 +1,6 @@
 # TutorialsNinja
 
-Welcome to the TutorialsNinja repository! This project is a comprehensive tutorial on using OpenCart, a free and open-source e-commerce platform for online merchants. The tutorials cover various aspects of OpenCart, providing insights into its features, customization, and usage.
+Welcome to the TutorialsNinja repository! This project is an automation project designed by using Java, Selenium, TestNG, ApachePOI, POM, and Hybrid framework. Tutorialsninja, a free and open-source e-commerce platform for online merchants.
 
 ## Project Details
 
@@ -15,7 +15,7 @@ Welcome to the TutorialsNinja repository! This project is a comprehensive tutori
 
 ## Overview
 
-As part of the TutorialsNinja project, Pavan has been assigned to test various functionalities of the 'https://tutorialsninja.com/demo/' web application. This document serves as a high-level test planning document, outlining the project's scope, test strategy, schedule, resource requirements, deliverables, and more.
+As part of the TutorialsNinja project, Satyajeet has been assigned to test various functionalities of the 'https://tutorialsninja.com/demo/' web application. This document serves as a high-level test planning document, outlining the project's scope, test strategy, schedule, resource requirements, deliverables, and more.
 
 ## Scope
 
