@@ -50,7 +50,7 @@ public class RegistrationPage {
     private WebElement subscribeLabel = null;
     @FindBy(xpath = "(//label[@class='radio-inline'])[1]")
     private WebElement yesOptionRadio = null;
-    @FindBy(xpath = "(//label[@class='radio-inline'])[1]")
+    @FindBy(xpath = "(//label[@class='radio-inline'])[2]")
     private WebElement noOptionRadio = null;
 
     @FindBy(xpath = "//div[@class='pull-right']")

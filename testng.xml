@@ -4,11 +4,9 @@
     <test verbose="2" name="C:/Users/satya/IdeaProjects/TutorialsNinja">
         <parameter name="Browser" value="chrome"/>
         <classes>
-            <class name="com.tutorialsninja.testscripts.login.TC001LoginWithValidCredentialTest">
-                <methods>
-                    <include name="login"/>
-                </methods>
-            </class>
+            <class name="com.tutorialsninja.testscripts.login.TC001LoginWithValidCredentialTest"/>
+            <class name="com.tutorialsninja.testscripts.login.TC002LoginWithInvalidCredentialTest"/>
+            <class name="com.tutorialsninja.testscripts.register.TC001ValidateUIDataOfRegistrationPageTest"/>
         </classes>
     </test>
 </suite>

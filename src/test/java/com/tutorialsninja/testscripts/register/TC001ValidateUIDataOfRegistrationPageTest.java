@@ -3,6 +3,7 @@ package com.tutorialsninja.testscripts.register;
 import com.tutorialsninja.core.FrameworkScript;
 import com.tutorialsninja.pages.HomePage;
 import com.tutorialsninja.pages.RegistrationPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -21,24 +22,22 @@ public class TC001ValidateUIDataOfRegistrationPageTest extends FrameworkScript {
         RegistrationPage reg = new RegistrationPage(driver);
         Map<String, String> data =  reg.fetchUIData();
 
-        SoftAssert as = new SoftAssert();
-
-        as.assertEquals(data.get("headingTxt"), "Register Account");
-        as.assertEquals(data.get("pageDescTxt"), "If you already have an account with us, please login at the login page.");
-        as.assertEquals(data.get("personalDetailsSubHeadingTxt"), "Your Personal Details");
-        as.assertEquals(data.get("firstNameLabel"), "First Name");
-        as.assertEquals(data.get("lastNameLabel"), "Last Name");
-        as.assertEquals(data.get("emailLabel"), "E-Mail");
-        as.assertEquals(data.get("telephoneLabel"), "Telephone");
-        as.assertEquals(data.get("yourPasswordSubHeadingTxt"), "Your Password");
-        as.assertEquals(data.get("passwordLabel"), "Password");
-        as.assertEquals(data.get("confirmPasswordLabel"), "Password");
-        as.assertEquals(data.get("newsletterSubHeadingTxt"), "Newsletter");
-        as.assertEquals(data.get("subscribeLabel"), "Subscribe");
-        as.assertEquals(data.get("yesOptionRadio"), "Yes");
-        as.assertEquals(data.get("noOptionRadio"), "No");
-        as.assertEquals(data.get("privacyPolicyTxt"), "I have read and agree to the Privacy Policy");
-        as.assertEquals(data.get("continueBtn"), "Continue");
+        Assert.assertEquals(data.get("headingTxt"), "Register Account");
+        Assert.assertEquals(data.get("pageDescTxt"), "If you already have an account with us, please login at the login page.");
+        Assert.assertEquals(data.get("personalDetailsSubHeadingTxt"), "Your Personal Details");
+        Assert.assertEquals(data.get("firstNameLabel"), "First Name");
+        Assert.assertEquals(data.get("lastNameLabel"), "Last Name");
+        Assert.assertEquals(data.get("emailLabel"), "E-Mail");
+        Assert.assertEquals(data.get("telephoneLabel"), "Telephone");
+        Assert.assertEquals(data.get("yourPasswordSubHeadingTxt"), "Your Password");
+        Assert.assertEquals(data.get("passwordLabel"), "Password");
+        Assert.assertEquals(data.get("confirmPasswordLabel"), "Password Confirm");
+        Assert.assertEquals(data.get("newsletterSubHeadingTxt"), "Newsletter");
+        Assert.assertEquals(data.get("subscribeLabel"), "Subscribe");
+        Assert.assertEquals(data.get("yesOptionRadio"), "Yes");
+        Assert.assertEquals(data.get("noOptionRadio"), "No");
+        Assert.assertEquals(data.get("privacyPolicyTxt"), "I have read and agree to the Privacy Policy  ");
+        Assert.assertEquals(data.get("continueBtn"), "Continue");
 
     }
 }
