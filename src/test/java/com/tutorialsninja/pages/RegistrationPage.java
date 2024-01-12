@@ -67,7 +67,7 @@ public class RegistrationPage {
     }
 
     public Map<String, String> fetchUIData() {
-        Map<String, String> map = new HashMap<String, String>();
+        Map<String, String> map = new HashMap<>();
 
         map.put("headingTxt", headingTxt.getText());
         map.put("pageDescTxt", pageDescTxt.getText());
@@ -89,7 +89,4 @@ public class RegistrationPage {
         return map;
     }
 
-    public void register() {
-
-    }
 }

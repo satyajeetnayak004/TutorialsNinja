@@ -4,41 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c88ea78b-7d4e-4a8f-a114-bfb02ce5066a" name="Changes" comment="Added Allure Report">
+    <list default="true" id="c88ea78b-7d4e-4a8f-a114-bfb02ce5066a" name="Changes" comment="Added automation code for UI data validation of Registration page">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34_[Changes]/shelved.patch" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11-01-2024_15_10_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11-01-2024_15_10__Changes_.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0a1186be-8e3c-405c-9b6c-034b6d99c9d0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/11843fa3-270b-42f1-b755-da3fab3dac37-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/31bfd782-be99-436f-9b96-29f4bb0ec60a-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/33a18fd7-6649-42ac-b1ab-7a8b0911715c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3b74be67-cf74-402b-a2b1-5ad39218562b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4527f171-9183-4c87-ac39-c74c97ca418e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4a5f2024-edb8-4ba5-9223-ad7a0abac250-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/5fa7ce51-1134-41bc-80c1-3ecdc74948f9-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/646e0019-50ea-43b5-acec-60d9dee05d22-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7ca95845-9a55-46a5-ac65-53b9c4527f28-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/802603f1-7aba-44d2-8453-e19308cf5df3-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9a767187-a8cc-485d-a81b-827b428c13f2-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9d915b2d-cf19-4861-8892-fd53609b9203-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a1c8c5e5-7501-4ee0-817d-9fa78eaaa04c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a850c02f-23af-42fb-a539-0ffae5ff9b89-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b8ae21ed-c7f4-4a23-a10e-a4ce9bd11b10-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/baef2d2c-ae33-47c4-993b-8957b5f16944-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c37a1837-9930-4e2e-90ae-fb3d6f47c3f0-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cbf5c308-fcdd-4866-9522-e686d367bfdc-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/dda79e1d-ea23-4cb6-a63d-093533782f36-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ff2ef4b5-086c-4470-8357-0fe02e47d3c2-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/pages/RegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/register/TC001ValidateUIDataOfRegistrationPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/register/TC001RegisterWithValidData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/register/TC001ValidateUIDataOfRegistrationPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/register/TC001ValidateUIDataOfRegistrationPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704966016589</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added automation code for UI data validation of Registration page">
+      <option name="closed" value="true" />
+      <created>1705074320950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705074320950</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -253,7 +240,8 @@
     <MESSAGE value="Added Excel file and read data from Excel file." />
     <MESSAGE value="Fixed test data reading" />
     <MESSAGE value="Added Allure Report" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Allure Report" />
+    <MESSAGE value="Added automation code for UI data validation of Registration page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added automation code for UI data validation of Registration page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

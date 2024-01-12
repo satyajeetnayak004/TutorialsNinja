@@ -3,7 +3,6 @@ package com.tutorialsninja.testscripts.register;
 import com.tutorialsninja.core.FrameworkScript;
 import com.tutorialsninja.pages.HomePage;
 import com.tutorialsninja.pages.RegistrationPage;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 

@@ -1,0 +1,1029 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1704870260341)
++++ b/.gitignore	(date 1704870260341)
+@@ -0,0 +1,38 @@
++target/
++!.mvn/wrapper/maven-wrapper.jar
++!**/src/main/**/target/
++!**/src/test/**/target/
++
++### IntelliJ IDEA ###
++.idea/modules.xml
++.idea/jarRepositories.xml
++.idea/compiler.xml
++.idea/libraries/
++*.iws
++*.iml
++*.ipr
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++build/
++!**/src/main/**/build/
++!**/src/test/**/build/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+new file mode 100644
+--- /dev/null	(date 1704870260333)
++++ b/.idea/inspectionProfiles/Project_Default.xml	(date 1704870260333)
+@@ -0,0 +1,26 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
++      <option name="isIgnoringEnabled" value="true" />
++      <option name="ignoredModules">
++        <list>
++          <option value="TutorialsNinja" />
++          <option value="TutorialsNinja" />
++        </list>
++      </option>
++      <option name="ignoredPackages">
++        <list>
++          <option value="com.fasterxml.jackson.core:jackson-databind:2.10.3" />
++          <option value="org.webjars:jquery:3.7.1" />
++        </list>
++      </option>
++      <option name="ignoredReasons">
++        <list>
++          <option value="Not exploitable" />
++          <option value="Not exploitable" />
++        </list>
++      </option>
++    </inspection_tool>
++  </profile>
++</component>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34__Changes_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34__Changes_.xml
+new file mode 100644
+--- /dev/null	(date 1704955957671)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34__Changes_.xml	(date 1704955957671)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Update_at_10-01-2024_12_34_[Changes]" date="1704870260696" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34_[Changes]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 10-01-2024 12:34 [Changes]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1704965888999)
++++ b/.idea/workspace.xml	(date 1704965888999)
+@@ -0,0 +1,228 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
++  <component name="ChangeListManager">
++    <list default="true" id="c88ea78b-7d4e-4a8f-a114-bfb02ce5066a" name="Changes" comment="Fixed test data reading">
++      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34_[Changes]/shelved.patch" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34__Changes_.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/allure-results/590e5b6c-1f95-4362-bfb0-8f361a3825d7-container.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/allure-results/8783d6b0-1023-4901-b010-3f678e7adc71-container.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/allure-results/b9ff55c0-ddac-4450-bc18-4b41c4baada9-result.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/allure-results/de225b1b-deb8-462e-8bf5-15a499ea91fd-result.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/allure-results/ecd3cc0a-d6f8-4b55-b2b1-44fec26026ee-container.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/register/TC001RegisterWithValidData.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 3
++}</component>
++  <component name="ProjectId" id="2aiQHC6AZAgIGn6jphe91SJJjsS" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;TestNG.TC001LoginWithValidCredentialTest.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TC001LoginWithValidCredentialTest.login.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TC002LoginWithInvalidCredentialTest.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TC002LoginWithInvalidCredentialTest.login.executor&quot;: &quot;Run&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/satya/IdeaProjects/TutorialsNinja/src/test/resources&quot;,
++    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/satya/IdeaProjects/TutorialsNinja/src/main/java/tutorialsninja/com/Main.java&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
++  }
++}</component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\satya\IdeaProjects\TutorialsNinja\src\test\resources" />
++      <recent name="C:\Users\satya\IdeaProjects\TutorialsNinja\src\test\java\com\tutorialsninja\pages" />
++    </key>
++    <key name="CopyClassDialog.RECENTS_KEY">
++      <recent name="com.tutorialsninja.testscripts" />
++      <recent name="com.tutorialsninja.core" />
++    </key>
++  </component>
++  <component name="RunManager" selected="TestNG.TC001LoginWithValidCredentialTest">
++    <configuration name="TC001LoginWithValidCredentialTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="TutorialsNinja" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.tutorialsninja.testscripts.login.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts" />
++      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.login.TC001LoginWithValidCredentialTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="TC001LoginWithValidCredentialTest.login" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="TutorialsNinja" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.tutorialsninja.testscripts.login.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts.login" />
++      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.login.TC001LoginWithValidCredentialTest" />
++      <option name="METHOD_NAME" value="login" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="TC002LoginWithInvalidCredentialTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="TutorialsNinja" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.tutorialsninja.testscripts.login.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts.login" />
++      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.login.TC002LoginWithInvalidCredentialTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="TC002LoginWithInvalidCredentialTest.login" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="TutorialsNinja" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.tutorialsninja.testscripts.login.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts.login" />
++      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.login.TC002LoginWithInvalidCredentialTest" />
++      <option name="METHOD_NAME" value="login" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="TestNG.TC001LoginWithValidCredentialTest" />
++        <item itemvalue="TestNG.TC001LoginWithValidCredentialTest.login" />
++        <item itemvalue="TestNG.TC002LoginWithInvalidCredentialTest.login" />
++        <item itemvalue="TestNG.TC002LoginWithInvalidCredentialTest" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-97de7592" />
++      </set>
++    </attachedChunks>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="c88ea78b-7d4e-4a8f-a114-bfb02ce5066a" name="Changes" comment="" />
++      <created>1704798833656</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1704798833656</updated>
++    </task>
++    <task id="LOCAL-00001" summary="First Commit">
++      <option name="closed" value="true" />
++      <created>1704799969968</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1704799969968</updated>
++    </task>
++    <task id="LOCAL-00002" summary="Added Excel file and read data from Excel file.">
++      <option name="closed" value="true" />
++      <created>1704870206096</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1704870206097</updated>
++    </task>
++    <task id="LOCAL-00003" summary="Fixed test data reading">
++      <option name="closed" value="true" />
++      <created>1704887375356</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1704887375357</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
++    <servers />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
++    <MESSAGE value="First Commit" />
++    <MESSAGE value="Added Excel file and read data from Excel file." />
++    <MESSAGE value="Fixed test data reading" />
++    <option name="LAST_COMMIT_MESSAGE" value="Fixed test data reading" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <breakpoint enabled="true" type="java-exception">
++          <properties class="java.lang.NullPointerException" package="java.lang" />
++          <option name="timeStamp" value="1" />
++        </breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/login/TC001LoginWithValidCredentialTest.java</url>
++          <line>11</line>
++          <option name="timeStamp" value="2" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1704870260363)
++++ b/.idea/misc.xml	(date 1704870260363)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="EntryPointsManager">
++    <writeAnnotations>
++      <writeAnnotation name="org.openqa.selenium.support.FindBy" />
++    </writeAnnotations>
++  </component>
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++    <option name="workspaceImportForciblyTurnedOn" value="true" />
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11 (2)" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1704870260356)
++++ b/.idea/vcs.xml	(date 1704870260356)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+new file mode 100644
+--- /dev/null	(date 1704870260348)
++++ b/.idea/uiDesigner.xml	(date 1704870260348)
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1704870260379)
++++ b/.idea/encodings.xml	(date 1704870260379)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34_[Changes]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34_[Changes]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1704870259578)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34_[Changes]/shelved.patch	(date 1704870259578)
+@@ -0,0 +1,478 @@
++Index: .idea/inspectionProfiles/Project_Default.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
++new file mode 100644
++--- /dev/null	(date 1704799225743)
+++++ b/.idea/inspectionProfiles/Project_Default.xml	(date 1704799225743)
++@@ -0,0 +1,26 @@
+++<component name="InspectionProjectProfileManager">
+++  <profile version="1.0">
+++    <option name="myName" value="Project Default" />
+++    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+++      <option name="isIgnoringEnabled" value="true" />
+++      <option name="ignoredModules">
+++        <list>
+++          <option value="TutorialsNinja" />
+++          <option value="TutorialsNinja" />
+++        </list>
+++      </option>
+++      <option name="ignoredPackages">
+++        <list>
+++          <option value="com.fasterxml.jackson.core:jackson-databind:2.10.3" />
+++          <option value="org.webjars:jquery:3.7.1" />
+++        </list>
+++      </option>
+++      <option name="ignoredReasons">
+++        <list>
+++          <option value="Not exploitable" />
+++          <option value="Not exploitable" />
+++        </list>
+++      </option>
+++    </inspection_tool>
+++  </profile>
+++</component>
++\ No newline at end of file
++Index: .gitignore
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.gitignore b/.gitignore
++new file mode 100644
++--- /dev/null	(date 1704798830342)
+++++ b/.gitignore	(date 1704798830342)
++@@ -0,0 +1,38 @@
+++target/
+++!.mvn/wrapper/maven-wrapper.jar
+++!**/src/main/**/target/
+++!**/src/test/**/target/
+++
+++### IntelliJ IDEA ###
+++.idea/modules.xml
+++.idea/jarRepositories.xml
+++.idea/compiler.xml
+++.idea/libraries/
+++*.iws
+++*.iml
+++*.ipr
+++
+++### Eclipse ###
+++.apt_generated
+++.classpath
+++.factorypath
+++.project
+++.settings
+++.springBeans
+++.sts4-cache
+++
+++### NetBeans ###
+++/nbproject/private/
+++/nbbuild/
+++/dist/
+++/nbdist/
+++/.nb-gradle/
+++build/
+++!**/src/main/**/build/
+++!**/src/test/**/build/
+++
+++### VS Code ###
+++.vscode/
+++
+++### Mac OS ###
+++.DS_Store
++\ No newline at end of file
++Index: .idea/uiDesigner.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
++new file mode 100644
++--- /dev/null	(date 1704817510141)
+++++ b/.idea/uiDesigner.xml	(date 1704817510141)
++@@ -0,0 +1,124 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="Palette2">
+++    <group name="Swing">
+++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+++      </item>
+++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+++      </item>
+++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+++      </item>
+++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
+++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+++      </item>
+++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+++        <initial-values>
+++          <property name="text" value="Button" />
+++        </initial-values>
+++      </item>
+++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+++        <initial-values>
+++          <property name="text" value="RadioButton" />
+++        </initial-values>
+++      </item>
+++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+++        <initial-values>
+++          <property name="text" value="CheckBox" />
+++        </initial-values>
+++      </item>
+++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+++        <initial-values>
+++          <property name="text" value="Label" />
+++        </initial-values>
+++      </item>
+++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+++          <preferred-size width="150" height="-1" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+++          <preferred-size width="150" height="-1" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+++          <preferred-size width="150" height="-1" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+++          <preferred-size width="150" height="50" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+++          <preferred-size width="150" height="50" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+++          <preferred-size width="150" height="50" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+++      </item>
+++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+++          <preferred-size width="150" height="50" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+++          <preferred-size width="150" height="50" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+++          <preferred-size width="150" height="50" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+++          <preferred-size width="200" height="200" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+++          <preferred-size width="200" height="200" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+++      </item>
+++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+++      </item>
+++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+++      </item>
+++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+++      </item>
+++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+++          <preferred-size width="-1" height="20" />
+++        </default-constraints>
+++      </item>
+++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+++      </item>
+++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+++      </item>
+++    </group>
+++  </component>
+++</project>
++\ No newline at end of file
++Index: .idea/vcs.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/vcs.xml b/.idea/vcs.xml
++new file mode 100644
++--- /dev/null	(date 1704798839855)
+++++ b/.idea/vcs.xml	(date 1704798839855)
++@@ -0,0 +1,6 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="VcsDirectoryMappings">
+++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+++  </component>
+++</project>
++\ No newline at end of file
++Index: .idea/misc.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/misc.xml b/.idea/misc.xml
++new file mode 100644
++--- /dev/null	(date 1704799225833)
+++++ b/.idea/misc.xml	(date 1704799225833)
++@@ -0,0 +1,20 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="EntryPointsManager">
+++    <writeAnnotations>
+++      <writeAnnotation name="org.openqa.selenium.support.FindBy" />
+++    </writeAnnotations>
+++  </component>
+++  <component name="ExternalStorageConfigurationManager" enabled="true" />
+++  <component name="MavenProjectsManager">
+++    <option name="originalFiles">
+++      <list>
+++        <option value="$PROJECT_DIR$/pom.xml" />
+++      </list>
+++    </option>
+++    <option name="workspaceImportForciblyTurnedOn" value="true" />
+++  </component>
+++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11 (2)" project-jdk-type="JavaSDK">
+++    <output url="file://$PROJECT_DIR$/out" />
+++  </component>
+++</project>
++\ No newline at end of file
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/workspace.xml b/.idea/workspace.xml
++new file mode 100644
++--- /dev/null	(date 1704869923749)
+++++ b/.idea/workspace.xml	(date 1704869923749)
++@@ -0,0 +1,180 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="AutoImportSettings">
+++    <option name="autoReloadType" value="SELECTIVE" />
+++  </component>
+++  <component name="ChangeListManager">
+++    <list default="true" id="c88ea78b-7d4e-4a8f-a114-bfb02ce5066a" name="Changes" comment="First Commit">
+++      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/helper/ExcelHelper.java" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/login/TC002LoginWithInvalidCredentialTest.java" afterDir="false" />
+++      <change afterPath="$PROJECT_DIR$/src/test/resources/TestData.xlsx" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/pages/LoginPage.java" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/TC001LoginWithValidCredentialTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/login/TC001LoginWithValidCredentialTest.java" afterDir="false" />
+++      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+++    </list>
+++    <option name="SHOW_DIALOG" value="false" />
+++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+++    <option name="LAST_RESOLUTION" value="IGNORE" />
+++  </component>
+++  <component name="FileTemplateManagerImpl">
+++    <option name="RECENT_TEMPLATES">
+++      <list>
+++        <option value="Class" />
+++      </list>
+++    </option>
+++  </component>
+++  <component name="Git.Settings">
+++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+++  </component>
+++  <component name="ProjectColorInfo">{
+++  &quot;associatedIndex&quot;: 3
+++}</component>
+++  <component name="ProjectId" id="2aiQHC6AZAgIGn6jphe91SJJjsS" />
+++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+++    <ConfirmationsSetting value="2" id="Add" />
+++  </component>
+++  <component name="ProjectViewState">
+++    <option name="hideEmptyMiddlePackages" value="true" />
+++    <option name="showLibraryContents" value="true" />
+++  </component>
+++  <component name="PropertiesComponent"><![CDATA[{
+++  "keyToString": {
+++    "ASKED_ADD_EXTERNAL_FILES": "true",
+++    "RunOnceActivity.OpenProjectViewOnStart": "true",
+++    "RunOnceActivity.ShowReadmeOnStart": "true",
+++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+++    "TestNG.TC001LoginWithValidCredentialTest.executor": "Run",
+++    "TestNG.TC002LoginWithInvalidCredentialTest.executor": "Run",
+++    "TestNG.TC002LoginWithInvalidCredentialTest.login.executor": "Run",
+++    "git-widget-placeholder": "master",
+++    "kotlin-language-version-configured": "true",
+++    "last_opened_file_path": "C:/Users/satya/IdeaProjects/TutorialsNinja/src/test/resources",
+++    "onboarding.tips.debug.path": "C:/Users/satya/IdeaProjects/TutorialsNinja/src/main/java/tutorialsninja/com/Main.java",
+++    "project.structure.last.edited": "Modules",
+++    "project.structure.proportion": "0.0",
+++    "project.structure.side.proportion": "0.0"
+++  }
+++}]]></component>
+++  <component name="RecentsManager">
+++    <key name="CopyFile.RECENT_KEYS">
+++      <recent name="C:\Users\satya\IdeaProjects\TutorialsNinja\src\test\resources" />
+++      <recent name="C:\Users\satya\IdeaProjects\TutorialsNinja\src\test\java\com\tutorialsninja\pages" />
+++    </key>
+++    <key name="CopyClassDialog.RECENTS_KEY">
+++      <recent name="com.tutorialsninja.testscripts" />
+++      <recent name="com.tutorialsninja.core" />
+++    </key>
+++  </component>
+++  <component name="RunManager" selected="TestNG.TC001LoginWithValidCredentialTest">
+++    <configuration name="TC001LoginWithValidCredentialTest" type="TestNG" temporary="true" nameIsGenerated="true">
+++      <module name="TutorialsNinja" />
+++      <extension name="coverage">
+++        <pattern>
+++          <option name="PATTERN" value="com.tutorialsninja.testscripts.login.*" />
+++          <option name="ENABLED" value="true" />
+++        </pattern>
+++      </extension>
+++      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts" />
+++      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.login.TC001LoginWithValidCredentialTest" />
+++      <option name="TEST_OBJECT" value="CLASS" />
+++      <properties />
+++      <listeners />
+++      <method v="2">
+++        <option name="Make" enabled="true" />
+++      </method>
+++    </configuration>
+++    <configuration name="TC002LoginWithInvalidCredentialTest" type="TestNG" temporary="true" nameIsGenerated="true">
+++      <module name="TutorialsNinja" />
+++      <extension name="coverage">
+++        <pattern>
+++          <option name="PATTERN" value="com.tutorialsninja.testscripts.login.*" />
+++          <option name="ENABLED" value="true" />
+++        </pattern>
+++      </extension>
+++      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts.login" />
+++      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.login.TC002LoginWithInvalidCredentialTest" />
+++      <option name="TEST_OBJECT" value="CLASS" />
+++      <properties />
+++      <listeners />
+++      <method v="2">
+++        <option name="Make" enabled="true" />
+++      </method>
+++    </configuration>
+++    <configuration name="TC002LoginWithInvalidCredentialTest.login" type="TestNG" temporary="true" nameIsGenerated="true">
+++      <module name="TutorialsNinja" />
+++      <extension name="coverage">
+++        <pattern>
+++          <option name="PATTERN" value="com.tutorialsninja.testscripts.login.*" />
+++          <option name="ENABLED" value="true" />
+++        </pattern>
+++      </extension>
+++      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts.login" />
+++      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.login.TC002LoginWithInvalidCredentialTest" />
+++      <option name="METHOD_NAME" value="login" />
+++      <option name="TEST_OBJECT" value="METHOD" />
+++      <properties />
+++      <listeners />
+++      <method v="2">
+++        <option name="Make" enabled="true" />
+++      </method>
+++    </configuration>
+++    <recent_temporary>
+++      <list>
+++        <item itemvalue="TestNG.TC001LoginWithValidCredentialTest" />
+++        <item itemvalue="TestNG.TC002LoginWithInvalidCredentialTest.login" />
+++        <item itemvalue="TestNG.TC002LoginWithInvalidCredentialTest" />
+++      </list>
+++    </recent_temporary>
+++  </component>
+++  <component name="SharedIndexes">
+++    <attachedChunks>
+++      <set>
+++        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-97de7592" />
+++      </set>
+++    </attachedChunks>
+++  </component>
+++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+++  <component name="TaskManager">
+++    <task active="true" id="Default" summary="Default task">
+++      <changelist id="c88ea78b-7d4e-4a8f-a114-bfb02ce5066a" name="Changes" comment="" />
+++      <created>1704798833656</created>
+++      <option name="number" value="Default" />
+++      <option name="presentableId" value="Default" />
+++      <updated>1704798833656</updated>
+++    </task>
+++    <task id="LOCAL-00001" summary="First Commit">
+++      <option name="closed" value="true" />
+++      <created>1704799969968</created>
+++      <option name="number" value="00001" />
+++      <option name="presentableId" value="LOCAL-00001" />
+++      <option name="project" value="LOCAL" />
+++      <updated>1704799969968</updated>
+++    </task>
+++    <option name="localTasksCounter" value="2" />
+++    <servers />
+++  </component>
+++  <component name="VcsManagerConfiguration">
+++    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+++    <MESSAGE value="First Commit" />
+++    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+++  </component>
+++  <component name="XDebuggerManager">
+++    <breakpoint-manager>
+++      <breakpoints>
+++        <breakpoint enabled="true" type="java-exception">
+++          <properties class="java.lang.NullPointerException" package="java.lang" />
+++          <option name="timeStamp" value="1" />
+++        </breakpoint>
+++      </breakpoints>
+++    </breakpoint-manager>
+++  </component>
+++</project>
++\ No newline at end of file
++Index: .idea/encodings.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/encodings.xml b/.idea/encodings.xml
++new file mode 100644
++--- /dev/null	(date 1704799038791)
+++++ b/.idea/encodings.xml	(date 1704799038791)
++@@ -0,0 +1,7 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="Encoding">
+++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+++  </component>
+++</project>
++\ No newline at end of file
