@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c88ea78b-7d4e-4a8f-a114-bfb02ce5066a" name="Changes" comment="Added Allure Report">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10-01-2024_12_34__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0a1186be-8e3c-405c-9b6c-034b6d99c9d0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/11843fa3-270b-42f1-b755-da3fab3dac37-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/31bfd782-be99-436f-9b96-29f4bb0ec60a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/33a18fd7-6649-42ac-b1ab-7a8b0911715c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/3b74be67-cf74-402b-a2b1-5ad39218562b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4527f171-9183-4c87-ac39-c74c97ca418e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4a5f2024-edb8-4ba5-9223-ad7a0abac250-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5fa7ce51-1134-41bc-80c1-3ecdc74948f9-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/646e0019-50ea-43b5-acec-60d9dee05d22-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7ca95845-9a55-46a5-ac65-53b9c4527f28-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/802603f1-7aba-44d2-8453-e19308cf5df3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9a767187-a8cc-485d-a81b-827b428c13f2-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9d915b2d-cf19-4861-8892-fd53609b9203-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a1c8c5e5-7501-4ee0-817d-9fa78eaaa04c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a850c02f-23af-42fb-a539-0ffae5ff9b89-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b8ae21ed-c7f4-4a23-a10e-a4ce9bd11b10-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/baef2d2c-ae33-47c4-993b-8957b5f16944-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c37a1837-9930-4e2e-90ae-fb3d6f47c3f0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/cbf5c308-fcdd-4866-9522-e686d367bfdc-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/dda79e1d-ea23-4cb6-a63d-093533782f36-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ff2ef4b5-086c-4470-8357-0fe02e47d3c2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/pages/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/register/TC001ValidateUIDataOfRegistrationPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/register/TC001RegisterWithValidData.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2aiQHC6AZAgIGn6jphe91SJJjsS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.A.executor": "Run",
+    "Application.TC001ValidateUIDataOfRegistrationPage.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.TC001LoginWithValidCredentialTest.executor": "Run",
+    "TestNG.TC001LoginWithValidCredentialTest.login.executor": "Run",
+    "TestNG.TC001ValidateUIDataOfRegistrationPageTest.executor": "Run",
+    "TestNG.TC001ValidateUIDataOfRegistrationPageTest.register.executor": "Run",
+    "TestNG.TC002LoginWithInvalidCredentialTest.executor": "Run",
+    "TestNG.TC002LoginWithInvalidCredentialTest.login.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/satya/IdeaProjects/TutorialsNinja/src/test/resources",
+    "onboarding.tips.debug.path": "C:/Users/satya/IdeaProjects/TutorialsNinja/src/main/java/tutorialsninja/com/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\satya\IdeaProjects\TutorialsNinja\src\test\resources" />
+      <recent name="C:\Users\satya\IdeaProjects\TutorialsNinja\src\test\java\com\tutorialsninja\pages" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tutorialsninja.testscripts" />
+      <recent name="com.tutorialsninja.core" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.TC001ValidateUIDataOfRegistrationPageTest">
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.test.A" />
+      <module name="TutorialsNinja" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC001LoginWithValidCredentialTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TutorialsNinja" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.testscripts.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts" />
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.login.TC001LoginWithValidCredentialTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC001LoginWithValidCredentialTest.login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TutorialsNinja" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.testscripts.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts.login" />
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.login.TC001LoginWithValidCredentialTest" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC001ValidateUIDataOfRegistrationPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TutorialsNinja" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.testscripts.register.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts.register" />
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.register.TC001ValidateUIDataOfRegistrationPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC001ValidateUIDataOfRegistrationPageTest.register" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TutorialsNinja" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.testscripts.register.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tutorialsninja.testscripts.register" />
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testscripts.register.TC001ValidateUIDataOfRegistrationPageTest" />
+      <option name="METHOD_NAME" value="register" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TC001ValidateUIDataOfRegistrationPageTest" />
+        <item itemvalue="TestNG.TC001ValidateUIDataOfRegistrationPageTest.register" />
+        <item itemvalue="TestNG.TC001LoginWithValidCredentialTest" />
+        <item itemvalue="Application.A" />
+        <item itemvalue="TestNG.TC001LoginWithValidCredentialTest.login" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-97de7592" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c88ea78b-7d4e-4a8f-a114-bfb02ce5066a" name="Changes" comment="" />
+      <created>1704798833656</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704798833656</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1704799969968</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704799969968</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added Excel file and read data from Excel file.">
+      <option name="closed" value="true" />
+      <created>1704870206096</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704870206097</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed test data reading">
+      <option name="closed" value="true" />
+      <created>1704887375356</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704887375357</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added Allure Report">
+      <option name="closed" value="true" />
+      <created>1704966016589</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704966016589</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First Commit" />
+    <MESSAGE value="Added Excel file and read data from Excel file." />
+    <MESSAGE value="Fixed test data reading" />
+    <MESSAGE value="Added Allure Report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Allure Report" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/tutorialsninja/testscripts/login/TC001LoginWithValidCredentialTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

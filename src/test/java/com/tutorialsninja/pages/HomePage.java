@@ -19,6 +19,11 @@ public class HomePage {
         PageFactory.initElements(driver, this);
     }
 
+    public void clickOnRegistrationOption() {
+        myAccountLink.click();
+        registerLink.click();
+    }
+
     public void clickOnLoginOption() {
         myAccountLink.click();
         loginLink.click();
