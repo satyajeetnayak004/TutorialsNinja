@@ -67,27 +67,27 @@ public class RegistrationPage {
         PageFactory.initElements(driver, this);
     }
 
-    public Map<String, String> fetchUIData() {
-        Map<String, String> map = new HashMap<>();
+    public Map<String, String> fetchRegPageUIData() {
+        Map<String, String> regPageData = new HashMap<>();
 
-        map.put("headingTxt", headingTxt.getText());
-        map.put("pageDescTxt", pageDescTxt.getText());
-        map.put("personalDetailsSubHeadingTxt", personalDetailsSubHeadingTxt.getText());
-        map.put("firstNameLabel", firstNameLabel.getText());
-        map.put("lastNameLabel", lastNameLabel.getText());
-        map.put("emailLabel", emailLabel.getText());
-        map.put("telephoneLabel", telephoneLabel.getText());
-        map.put("yourPasswordSubHeadingTxt", yourPasswordSubHeadingTxt.getText());
-        map.put("passwordLabel", passwordLabel.getText());
-        map.put("confirmPasswordLabel", confirmPasswordLabel.getText());
-        map.put("newsletterSubHeadingTxt", newsletterSubHeadingTxt.getText());
-        map.put("subscribeLabel", subscribeLabel.getText());
-        map.put("yesOptionRadio", yesOptionRadio.getText());
-        map.put("noOptionRadio", noOptionRadio.getText());
-        map.put("privacyPolicyTxt", privacyPolicyTxt.getText());
-        map.put("continueBtn", continueBtn.getAttribute("value"));
+        regPageData.put("headingTxt", headingTxt.getText());
+        regPageData.put("pageDescTxt", pageDescTxt.getText());
+        regPageData.put("personalDetailsSubHeadingTxt", personalDetailsSubHeadingTxt.getText());
+        regPageData.put("firstNameLabel", firstNameLabel.getText());
+        regPageData.put("lastNameLabel", lastNameLabel.getText());
+        regPageData.put("emailLabel", emailLabel.getText());
+        regPageData.put("telephoneLabel", telephoneLabel.getText());
+        regPageData.put("yourPasswordSubHeadingTxt", yourPasswordSubHeadingTxt.getText());
+        regPageData.put("passwordLabel", passwordLabel.getText());
+        regPageData.put("confirmPasswordLabel", confirmPasswordLabel.getText());
+        regPageData.put("newsletterSubHeadingTxt", newsletterSubHeadingTxt.getText());
+        regPageData.put("subscribeLabel", subscribeLabel.getText());
+        regPageData.put("yesOptionRadio", yesOptionRadio.getText());
+        regPageData.put("noOptionRadio", noOptionRadio.getText());
+        regPageData.put("privacyPolicyTxt", privacyPolicyTxt.getText());
+        regPageData.put("continueBtn", continueBtn.getAttribute("value"));
 
-        return map;
+        return regPageData;
     }
 
 }

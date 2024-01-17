@@ -19,7 +19,7 @@ public class LoginPage {
     private WebElement continueBtn = null;
     @FindBy(xpath = "//h2[text()='Returning Customer']")
     private WebElement returningCustomerTxt = null;
-    @FindBy(xpath = "//strong[@xpath='1']")
+    @FindBy(xpath = "//strong[text()='I am a returning customer']")
     private WebElement loginFirstParagraphTxt = null;
     @FindBy(xpath = "//label[@for='input-email']")
     private WebElement eMailAddressLabel = null;
@@ -42,7 +42,7 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    public Map<String, String> fetchUIData() {
+    public Map<String, String> fetchLoginPageUIData() {
         Map<String, String> loginData = new HashMap<>();
 
         loginData.put("newCustomerTxt", newCustomerTxt.getText());
@@ -54,7 +54,7 @@ public class LoginPage {
         loginData.put("eMailAddressLabel", eMailAddressLabel.getText());
         loginData.put("passwordLabel", passwordLabel.getText());
         loginData.put("forgottenPasswordLink", forgottenPasswordLink.getText());
-        loginData.put("loginBtn", loginBtn.getText());
+        loginData.put("loginBtn", loginBtn.getAttribute("value"));
 
         return loginData;
     }

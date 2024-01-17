@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class TC001ValidateUIDataOfLoginPageTest extends FrameworkScript {
     @Test
-    public void validateUIData() throws InterruptedException {
+    public void validateLoginPageUIData() throws InterruptedException {
         driver.get("https://tutorialsninja.com/demo/");
 
         Thread.sleep(3000);
@@ -19,11 +19,11 @@ public class TC001ValidateUIDataOfLoginPageTest extends FrameworkScript {
         home.clickOnLoginOption();
 
         LoginPage login = new LoginPage(driver);
-        Map<String, String> data =  login.fetchUIData();
+        Map<String, String> data =  login.fetchLoginPageUIData();
 
         System.out.println(data);
 
-        Assert.assertEquals(data.get("newCustomerTxt"), "New Customer   ");
+        Assert.assertEquals(data.get("newCustomerTxt"), "New Customer");
         Assert.assertEquals(data.get("registerAccountTxt"), "Register Account");
         Assert.assertEquals(data.get("registerAccountDescTxt"), "By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.");
         Assert.assertEquals(data.get("continueBtn"), "Continue");
