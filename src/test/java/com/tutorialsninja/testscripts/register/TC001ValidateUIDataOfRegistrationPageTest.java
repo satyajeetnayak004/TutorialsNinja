@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class TC001ValidateUIDataOfRegistrationPageTest extends FrameworkScript {
     @Test
-    public void verifyUIData() throws InterruptedException {
+    public void validateUIData() throws InterruptedException {
         driver.get("https://tutorialsninja.com/demo/");
 
         Thread.sleep(3000);

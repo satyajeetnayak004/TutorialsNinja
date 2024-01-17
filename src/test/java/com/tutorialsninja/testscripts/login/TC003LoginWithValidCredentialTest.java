@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class TC001LoginWithValidCredentialTest extends FrameworkScript {
+public class TC003LoginWithValidCredentialTest extends FrameworkScript {
     @Test(dataProvider = "getTestData")
     public void login(String userName, String password) throws InterruptedException {
         driver.get("https://tutorialsninja.com/demo/");
