@@ -4,8 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.asserts.SoftAssert;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -88,6 +86,24 @@ public class RegistrationPage {
         regPageData.put("continueBtn", continueBtn.getAttribute("value"));
 
         return regPageData;
+    }
+
+    // Register with user given data
+    public void register(String firstName, String lastName, String email, long telephoneNo, String password, String confirmPassword, boolean subscribe, boolean privacyPolicy) throws InterruptedException {
+        firstNameTxtField.sendKeys(firstName);
+        lastNameTxtField.sendKeys(lastName);
+        emailTxtField.sendKeys(email);
+        telephoneTxtField.sendKeys(String.valueOf(telephoneNo));
+        passwordTxtField.sendKeys(password);
+        confirmPasswordTxtField.sendKeys(confirmPassword);
+        if (subscribe)
+            yesOptionRadio.click();
+        else
+            noOptionRadio.click();
+        if (privacyPolicy)
+            privacyPolicyCheckbox.click();
+        Thread.sleep(3000);
+        continueBtn.click();
     }
 
 }
