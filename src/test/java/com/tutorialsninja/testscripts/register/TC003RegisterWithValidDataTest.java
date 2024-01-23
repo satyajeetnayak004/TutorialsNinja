@@ -5,7 +5,7 @@ import com.tutorialsninja.pages.HomePage;
 import com.tutorialsninja.pages.RegistrationPage;
 import org.testng.annotations.Test;
 
-public class TC002RegisterWithValidDataTest extends FrameworkScript {
+public class TC003RegisterWithValidDataTest extends FrameworkScript {
     @Test
     public void register() throws InterruptedException {
         driver.get("https://tutorialsninja.com/demo/");

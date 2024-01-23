@@ -4,7 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class RegistrationPage {
@@ -58,6 +61,8 @@ public class RegistrationPage {
     private WebElement privacyPolicyLink = null;
     @FindBy(xpath = "//input[@name='agree']")
     private WebElement privacyPolicyCheckbox = null;
+    @FindBy(xpath = "//h4[@class='modal-title']")
+    private WebElement modalTitle = null;
     @FindBy(xpath = "//input[@value='Continue']")
     private WebElement continueBtn = null;
 
@@ -104,6 +109,19 @@ public class RegistrationPage {
             privacyPolicyCheckbox.click();
         Thread.sleep(3000);
         continueBtn.click();
+    }
+
+    // Verify the navigation of all links available on registration page
+    public List<String> verifyRegPageLinksNavigation(WebDriver driver) throws InterruptedException {
+        List<String> linksData = new ArrayList<>();
+        loginPageLink.click();
+        linksData.add(driver.getTitle());
+        driver.navigate().back();
+        privacyPolicyLink.click();
+        Thread.sleep(2000);
+        linksData.add(modalTitle.getText());
+
+        return linksData;
     }
 
 }
