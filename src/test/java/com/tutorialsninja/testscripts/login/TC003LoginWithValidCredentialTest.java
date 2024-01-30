@@ -2,7 +2,7 @@ package com.tutorialsninja.testscripts.login;
 
 import com.tutorialsninja.core.FrameworkScript;
 import com.tutorialsninja.helper.ExcelHelper;
-import com.tutorialsninja.pages.HomePage;
+import com.tutorialsninja.pages.Header;
 import com.tutorialsninja.pages.LoginPage;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -16,8 +16,8 @@ public class TC003LoginWithValidCredentialTest extends FrameworkScript {
 
         Thread.sleep(3000);
 
-        HomePage home = new HomePage(driver);
-        home.clickOnLoginOption();
+        Header header = new Header(driver);
+        header.clickOnLoginOption();
 
         Thread.sleep(3000);
 

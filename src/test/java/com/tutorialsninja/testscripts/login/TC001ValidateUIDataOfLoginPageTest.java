@@ -1,7 +1,7 @@
 package com.tutorialsninja.testscripts.login;
 
 import com.tutorialsninja.core.FrameworkScript;
-import com.tutorialsninja.pages.HomePage;
+import com.tutorialsninja.pages.Header;
 import com.tutorialsninja.pages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,8 +15,8 @@ public class TC001ValidateUIDataOfLoginPageTest extends FrameworkScript {
 
         Thread.sleep(3000);
 
-        HomePage home = new HomePage(driver);
-        home.clickOnLoginOption();
+        Header header = new Header(driver);
+        header.clickOnLoginOption();
 
         LoginPage login = new LoginPage(driver);
         Map<String, String> data =  login.fetchLoginPageUIData();

@@ -1,7 +1,7 @@
 package com.tutorialsninja.testscripts.register;
 
 import com.tutorialsninja.core.FrameworkScript;
-import com.tutorialsninja.pages.HomePage;
+import com.tutorialsninja.pages.Header;
 import com.tutorialsninja.pages.RegistrationPage;
 import org.testng.annotations.Test;
 
@@ -12,8 +12,8 @@ public class TC003RegisterWithValidDataTest extends FrameworkScript {
 
         Thread.sleep(3000);
 
-        HomePage home = new HomePage(driver);
-        home.clickOnRegistrationOption();
+        Header header = new Header(driver);
+        header.clickOnRegistrationOption();
 
         Thread.sleep(3000);
 

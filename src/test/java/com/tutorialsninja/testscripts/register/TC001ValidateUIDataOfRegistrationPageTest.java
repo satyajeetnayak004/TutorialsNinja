@@ -1,7 +1,7 @@
 package com.tutorialsninja.testscripts.register;
 
 import com.tutorialsninja.core.FrameworkScript;
-import com.tutorialsninja.pages.HomePage;
+import com.tutorialsninja.pages.Header;
 import com.tutorialsninja.pages.RegistrationPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,8 +15,8 @@ public class TC001ValidateUIDataOfRegistrationPageTest extends FrameworkScript {
 
         Thread.sleep(3000);
 
-        HomePage home = new HomePage(driver);
-        home.clickOnRegistrationOption();
+        Header header = new Header(driver);
+        header.clickOnRegistrationOption();
 
         RegistrationPage reg = new RegistrationPage(driver);
         Map<String, String> data =  reg.fetchRegPageUIData();
