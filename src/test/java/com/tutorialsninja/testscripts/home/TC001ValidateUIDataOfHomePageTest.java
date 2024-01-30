@@ -51,9 +51,14 @@ public class TC001ValidateUIDataOfHomePageTest extends FrameworkScript {
         Assert.assertEquals(data.get("currencyEuroLink"), "€Euro");
         Assert.assertEquals(data.get("currencyPoundLink"), "£Pound Sterling");
         Assert.assertEquals(data.get("currencyUSLink"), "$US Dollar");
+        Assert.assertEquals(data.get("contactNumber"), "123456789");
         Assert.assertEquals(data.get("myAccountLink"), "My Account");
         Assert.assertEquals(data.get("registerLink"), "Register");
         Assert.assertEquals(data.get("loginLink"), "Login");
+        Assert.assertEquals(data.get("wishListLink"), "Wish List (0)");
+        Assert.assertEquals(data.get("shoppingCartLink"), "Shopping Cart");
+        Assert.assertEquals(data.get("checkoutLink"), "Checkout");
+
 
     }
 }

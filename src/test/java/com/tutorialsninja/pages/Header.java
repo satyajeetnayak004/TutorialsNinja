@@ -17,14 +17,20 @@ public class Header {
     private WebElement currencyPoundLink = null;
     @FindBy(xpath = "//button[@name='USD']")
     private WebElement currencyUSLink = null;
+    @FindBy(xpath = "//span[text()='123456789']")
+    private WebElement contactNumber = null;
     @FindBy(xpath = "//a[@title='My Account']")
     private WebElement myAccountLink = null;
-
     @FindBy(linkText = "Register")
     private WebElement registerLink = null;
-
     @FindBy(linkText = "Login")
     private WebElement loginLink = null;
+    @FindBy(xpath = "//span[text()='Wish List (0)']")
+    private WebElement wishListLink = null;
+    @FindBy(xpath = "//span[text()='Shopping Cart']")
+    private WebElement shoppingCartLink = null;
+    @FindBy(xpath = "//span[text()='Checkout']")
+    private WebElement checkoutLink = null;
 
     public Header(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -37,10 +43,14 @@ public class Header {
         homePageData.put("currencyEuroLink", currencyEuroLink.getText());
         homePageData.put("currencyPoundLink", currencyPoundLink.getText());
         homePageData.put("currencyUSLink", currencyUSLink.getText());
+        homePageData.put("contactNumber", contactNumber.getText());
         homePageData.put("myAccountLink", myAccountLink.getText());
         myAccountLink.click();
         homePageData.put("registerLink", registerLink.getText());
         homePageData.put("loginLink", loginLink.getText());
+        homePageData.put("wishListLink", wishListLink.getText());
+        homePageData.put("shoppingCartLink", shoppingCartLink.getText());
+        homePageData.put("checkoutLink", checkoutLink.getText());
 
         return homePageData;
     }
