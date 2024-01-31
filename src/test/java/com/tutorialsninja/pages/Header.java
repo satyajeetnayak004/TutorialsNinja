@@ -106,56 +106,56 @@ public class Header {
         PageFactory.initElements(driver, this);
     }
 
-    public Map<String, String> fetchHomePageUIData() {
-        Map<String, String> homePageData = new HashMap<>();
+    public Map<String, String> fetchHeaderUIData() {
+        Map<String, String> headerData = new HashMap<>();
 
-        homePageData.put("currencyLink", currencyLink.getText());
+        headerData.put("currencyLink", currencyLink.getText());
         currencyLink.click();
-        homePageData.put("currencyEuroLink", currencyEuroLink.getText());
-        homePageData.put("currencyPoundLink", currencyPoundLink.getText());
-        homePageData.put("currencyUSLink", currencyUSLink.getText());
-        homePageData.put("contactNumber", contactNumber.getText());
-        homePageData.put("myAccountLink", myAccountLink.getText());
+        headerData.put("currencyEuroLink", currencyEuroLink.getText());
+        headerData.put("currencyPoundLink", currencyPoundLink.getText());
+        headerData.put("currencyUSLink", currencyUSLink.getText());
+        headerData.put("contactNumber", contactNumber.getText());
+        headerData.put("myAccountLink", myAccountLink.getText());
         myAccountLink.click();
-        homePageData.put("registerLink", registerLink.getText());
-        homePageData.put("loginLink", loginLink.getText());
-        homePageData.put("wishListLink", wishListLink.getText());
-        homePageData.put("shoppingCartLink", shoppingCartLink.getText());
-        homePageData.put("checkoutLink", checkoutLink.getText());
-        homePageData.put("logoLink", logoLink.getText());
-        homePageData.put("inputTxtField", inputTxtField.getAttribute("placeholder"));
-        homePageData.put("cartTotal", cartTotal.getText());
+        headerData.put("registerLink", registerLink.getText());
+        headerData.put("loginLink", loginLink.getText());
+        headerData.put("wishListLink", wishListLink.getText());
+        headerData.put("shoppingCartLink", shoppingCartLink.getText());
+        headerData.put("checkoutLink", checkoutLink.getText());
+        headerData.put("logoLink", logoLink.getText());
+        headerData.put("inputTxtField", inputTxtField.getAttribute("placeholder"));
+        headerData.put("cartTotal", cartTotal.getText());
 
-        homePageData.put("desktopsLink", desktopsLink.getText());
+        headerData.put("desktopsLink", desktopsLink.getText());
         desktopsLink.click();
-        homePageData.put("desktopsPCLink", desktopsPCLink.getText());
-        homePageData.put("desktopsMacLink", desktopsMacLink.getText());
-        homePageData.put("showAllDesktopLink", showAllDesktopLink.getText());
+        headerData.put("desktopsPCLink", desktopsPCLink.getText());
+        headerData.put("desktopsMacLink", desktopsMacLink.getText());
+        headerData.put("showAllDesktopLink", showAllDesktopLink.getText());
 
-        homePageData.put("laptopsAndNotebooksLink", laptopsAndNotebooksLink.getText());
+        headerData.put("laptopsAndNotebooksLink", laptopsAndNotebooksLink.getText());
         laptopsAndNotebooksLink.click();
-        homePageData.put("laptopsAndNotebooksMacsLink", laptopsAndNotebooksMacsLink.getText());
-        homePageData.put("laptopsAndNotebooksWindowsLink", laptopsAndNotebooksWindowsLink.getText());
-        homePageData.put("showAllLaptopsAndNotebooksLink", showAllLaptopsAndNotebooksLink.getText());
+        headerData.put("laptopsAndNotebooksMacsLink", laptopsAndNotebooksMacsLink.getText());
+        headerData.put("laptopsAndNotebooksWindowsLink", laptopsAndNotebooksWindowsLink.getText());
+        headerData.put("showAllLaptopsAndNotebooksLink", showAllLaptopsAndNotebooksLink.getText());
 
-        homePageData.put("componentsMenuLink", componentsMenuLink.getText());
+        headerData.put("componentsMenuLink", componentsMenuLink.getText());
         componentsMenuLink.click();
-        homePageData.put("miceAndTrackballsSubMenuLink", miceAndTrackballsSubMenuLink.getText());
-        homePageData.put("monitorsSubMenuLink", monitorsSubMenuLink.getText());
-        homePageData.put("printersSubMenuLink", printersSubMenuLink.getText());
-        homePageData.put("scannersSubMenuLink", scannersSubMenuLink.getText());
-        homePageData.put("webCamerasSubMenuLink", webCamerasSubMenuLink.getText());
-        homePageData.put("showAllComponentsLink", showAllComponentsLink.getText());
+        headerData.put("miceAndTrackballsSubMenuLink", miceAndTrackballsSubMenuLink.getText());
+        headerData.put("monitorsSubMenuLink", monitorsSubMenuLink.getText());
+        headerData.put("printersSubMenuLink", printersSubMenuLink.getText());
+        headerData.put("scannersSubMenuLink", scannersSubMenuLink.getText());
+        headerData.put("webCamerasSubMenuLink", webCamerasSubMenuLink.getText());
+        headerData.put("showAllComponentsLink", showAllComponentsLink.getText());
 
-        homePageData.put("tabletsMenuLink", tabletsMenuLink.getText());
-        homePageData.put("softwareMenuLink", softwareMenuLink.getText());
-        homePageData.put("phonesAndPDAsMenuLink", phonesAndPDAsMenuLink.getText());
-        homePageData.put("camerasMenuLink", camerasMenuLink.getText());
-        homePageData.put("mp3PlayersMenuLink", mp3PlayersMenuLink.getText());
+        headerData.put("tabletsMenuLink", tabletsMenuLink.getText());
+        headerData.put("softwareMenuLink", softwareMenuLink.getText());
+        headerData.put("phonesAndPDAsMenuLink", phonesAndPDAsMenuLink.getText());
+        headerData.put("camerasMenuLink", camerasMenuLink.getText());
+        headerData.put("mp3PlayersMenuLink", mp3PlayersMenuLink.getText());
         mp3PlayersMenuLink.click();
-        homePageData.put("showAllMP3PlayersLink", showAllMP3PlayersLink.getText());
+        headerData.put("showAllMP3PlayersLink", showAllMP3PlayersLink.getText());
 
-        return homePageData;
+        return headerData;
     }
 
     public void clickOnMyAccount() {

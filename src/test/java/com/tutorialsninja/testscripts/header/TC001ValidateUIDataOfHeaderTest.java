@@ -1,4 +1,4 @@
-package com.tutorialsninja.testscripts.home;
+package com.tutorialsninja.testscripts.header;
 
 import com.tutorialsninja.core.FrameworkScript;
 import com.tutorialsninja.pages.Header;
@@ -7,15 +7,15 @@ import org.testng.annotations.Test;
 
 import java.util.Map;
 
-public class TC001ValidateUIDataOfHomePageTest extends FrameworkScript {
+public class TC001ValidateUIDataOfHeaderTest extends FrameworkScript {
     @Test
-    public void validateHomePageUIData() throws InterruptedException {
+    public void validateHeaderUIData() throws InterruptedException {
         driver.get("https://tutorialsninja.com/demo/");
         Thread.sleep(3000);
         Header header = new Header(driver);
         Thread.sleep(3000);
 
-        Map<String, String> data =  header.fetchHomePageUIData();
+        Map<String, String> data =  header.fetchHeaderUIData();
 
         Assert.assertEquals(data.get("currencyLink"), "Currency");
         Assert.assertEquals(data.get("currencyEuroLink"), "€Euro");
