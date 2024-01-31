@@ -15,7 +15,7 @@ public class TC001ValidateUIDataOfHomePageTest extends FrameworkScript {
         Header header = new Header(driver);
         Thread.sleep(3000);
 
-        Map<String, String> data =  header.fetchHomePageUIData(driver);
+        Map<String, String> data =  header.fetchHomePageUIData();
 
         Assert.assertEquals(data.get("currencyLink"), "Currency");
         Assert.assertEquals(data.get("currencyEuroLink"), "€Euro");

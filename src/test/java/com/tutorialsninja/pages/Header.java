@@ -106,7 +106,7 @@ public class Header {
         PageFactory.initElements(driver, this);
     }
 
-    public Map<String, String> fetchHomePageUIData(WebDriver driver) {
+    public Map<String, String> fetchHomePageUIData() {
         Map<String, String> homePageData = new HashMap<>();
 
         homePageData.put("currencyLink", currencyLink.getText());
