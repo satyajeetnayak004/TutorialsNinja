@@ -2,7 +2,6 @@ package com.tutorialsninja.testscripts.footer;
 
 import com.tutorialsninja.core.FrameworkScript;
 import com.tutorialsninja.pages.Footer;
-import com.tutorialsninja.pages.Header;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
