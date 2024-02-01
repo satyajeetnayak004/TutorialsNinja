@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class TC001ValidateUIDataOfFooterTest extends FrameworkScript {
     @Test
-    public void validateFooterUIData() throws InterruptedException {
+    public void validateFooterUIData() throws InterruptedException { 
         driver.get("https://tutorialsninja.com/demo/");
         Thread.sleep(3000);
         Footer footer = new Footer(driver);
