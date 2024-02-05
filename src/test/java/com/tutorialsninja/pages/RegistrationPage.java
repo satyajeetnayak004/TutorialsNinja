@@ -94,13 +94,19 @@ public class RegistrationPage {
     }
 
     // Register with user given data
-    public void register(String firstName, String lastName, String email, long telephoneNo, String password, String confirmPassword, boolean subscribe, boolean privacyPolicy) throws InterruptedException {
-        firstNameTxtField.sendKeys(firstName);
-        lastNameTxtField.sendKeys(lastName);
-        emailTxtField.sendKeys(email);
-        telephoneTxtField.sendKeys(String.valueOf(telephoneNo));
-        passwordTxtField.sendKeys(password);
-        confirmPasswordTxtField.sendKeys(confirmPassword);
+    public void register(WebDriver driver, String firstName, String lastName, String email, long telephoneNo, String password, String confirmPassword, boolean subscribe, boolean privacyPolicy) throws InterruptedException {
+        if(firstName != null && !firstName.isEmpty() && !firstName.equals(" "))
+            firstNameTxtField.sendKeys(firstName);
+        if(lastName != null && !lastName.isEmpty() && !lastName.equals(" "))
+            lastNameTxtField.sendKeys(lastName);
+        if(email != null && !email.isEmpty() && !email.equals(" "))
+            emailTxtField.sendKeys(email);
+        if(telephoneNo != 0)
+            telephoneTxtField.sendKeys(String.valueOf(telephoneNo));
+        if(password != null && !password.isEmpty() && !password.equals(" "))
+            passwordTxtField.sendKeys(password);
+        if(confirmPassword != null && !confirmPassword.isEmpty() && !confirmPassword.equals(" "))
+            confirmPasswordTxtField.sendKeys(confirmPassword);
         if (subscribe)
             yesOptionRadio.click();
         else
@@ -109,6 +115,13 @@ public class RegistrationPage {
             privacyPolicyCheckbox.click();
         Thread.sleep(3000);
         continueBtn.click();
+        Thread.sleep(5000);
+
+        if (driver.getTitle().contains("Your Account Has Been Created!")) {
+            System.out.println("Registered Successfully!");
+        } else {
+            System.out.println("Something went wrong!");
+        }
     }
 
     // Verify the navigation of all links available on registration page
