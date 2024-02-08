@@ -32,8 +32,8 @@ public class FrameworkScript {
                 break;
         }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
-        driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.MINUTES);
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+        driver.manage().timeouts().pageLoadTimeout(1, TimeUnit.MINUTES);
     }
 
     @AfterTest

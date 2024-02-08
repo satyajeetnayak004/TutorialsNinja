@@ -1,5 +1,6 @@
 package com.tutorialsninja.pages;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -65,6 +66,20 @@ public class RegistrationPage {
     private WebElement modalTitle = null;
     @FindBy(xpath = "//input[@value='Continue']")
     private WebElement continueBtn = null;
+    @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+    private WebElement warningMessage = null;
+    @FindBy(xpath = "//input[@id='input-firstname']/following-sibling::div")
+    private WebElement firstNameErrorMessage = null;
+    @FindBy(xpath = "//input[@id='input-lastname']/following-sibling::div")
+    private WebElement lastNameErrorMessage = null;
+    @FindBy(xpath = "//input[@id='input-email']/following-sibling::div")
+    private WebElement emailAddressErrorMessage = null;
+    @FindBy(xpath = "//input[@id='input-telephone']/following-sibling::div")
+    private WebElement telephoneErrorMessage = null;
+    @FindBy(xpath = "//input[@id='input-password']/following-sibling::div")
+    private WebElement passwordErrorMessage = null;
+    @FindBy(xpath = "//input[@id='input-confirm']/following-sibling::div")
+    private WebElement confirmPasswordErrorMessage = null;
 
     public RegistrationPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -94,7 +109,8 @@ public class RegistrationPage {
     }
 
     // Register with user given data
-    public void register(WebDriver driver, String firstName, String lastName, String email, long telephoneNo, String password, String confirmPassword, boolean subscribe, boolean privacyPolicy) throws InterruptedException {
+    public Map<String, String> register(WebDriver driver, String firstName, String lastName, String email, long telephoneNo, String password, String confirmPassword, boolean subscribe, boolean privacyPolicy) throws InterruptedException {
+        Map<String, String> messageData = new HashMap<>();
         if(firstName != null && !firstName.isEmpty() && !firstName.equals(" "))
             firstNameTxtField.sendKeys(firstName);
         if(lastName != null && !lastName.isEmpty() && !lastName.equals(" "))
@@ -117,11 +133,31 @@ public class RegistrationPage {
         continueBtn.click();
         Thread.sleep(5000);
 
+        /* Verify that whether user able to register or not */
         if (driver.getTitle().contains("Your Account Has Been Created!")) {
             System.out.println("Registered Successfully!");
+            messageData.put("Page Title", driver.getTitle());
         } else {
             System.out.println("Something went wrong!");
+
+            try {
+                if (warningMessage != null)
+                    messageData.put("warningMessage", warningMessage.getText());
+                if (firstNameErrorMessage.isEnabled())
+                    messageData.put("firstNameErrorMessage", firstNameErrorMessage.getText());
+                if (lastNameErrorMessage != null)
+                    messageData.put("lastNameErrorMessage", lastNameErrorMessage.getText());
+                if (emailAddressErrorMessage != null)
+                    messageData.put("emailAddressErrorMessage", emailAddressErrorMessage.getText());
+                if (telephoneErrorMessage != null)
+                    messageData.put("telephoneErrorMessage", telephoneErrorMessage.getText());
+                if (passwordErrorMessage != null)
+                    messageData.put("passwordErrorMessage", passwordErrorMessage.getText());
+            } catch (NoSuchElementException e) {
+                e.printStackTrace();
+            }
         }
+        return messageData;
     }
 
     // Verify the navigation of all links available on registration page
