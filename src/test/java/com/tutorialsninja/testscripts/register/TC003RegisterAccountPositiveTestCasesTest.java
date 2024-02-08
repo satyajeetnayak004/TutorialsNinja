@@ -9,8 +9,7 @@ import java.util.Map;
 
 public class TC003RegisterAccountPositiveTestCasesTest extends FrameworkScript {
     public RegistrationPage getRegPageObj() {
-        RegistrationPage regPage = new RegistrationPage(driver);
-        return regPage;
+        return new RegistrationPage(driver);
     }
     public void goToRegPage() throws InterruptedException {
         driver.get("https://tutorialsninja.com/demo/");
