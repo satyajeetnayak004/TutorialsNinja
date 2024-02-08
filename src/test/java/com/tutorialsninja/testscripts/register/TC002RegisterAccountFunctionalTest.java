@@ -3,11 +3,13 @@ package com.tutorialsninja.testscripts.register;
 import com.tutorialsninja.core.FrameworkScript;
 import com.tutorialsninja.pages.Header;
 import com.tutorialsninja.pages.RegistrationPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.Map;
 
-public class TC003RegisterAccountPositiveTestCasesTest extends FrameworkScript {
+public class TC002RegisterAccountFunctionalTest extends FrameworkScript {
     public RegistrationPage getRegPageObj() {
         return new RegistrationPage(driver);
     }
@@ -21,7 +23,19 @@ public class TC003RegisterAccountPositiveTestCasesTest extends FrameworkScript {
 
         Thread.sleep(3000);
     }
-    @Test(priority = 1)
+
+    @Test(priority = 0, groups = "positive")
+    public void verifyNavigation() throws InterruptedException {
+        goToRegPage();
+
+        List<String> linksData = getRegPageObj().verifyRegPageLinksNavigation(driver);
+        System.out.println(linksData);
+
+        // Verify Navigation Data
+        Assert.assertEquals(linksData.get(0), "Account Login");
+        Assert.assertEquals(linksData.get(1), "Privacy Policy");
+    }
+    @Test(priority = 1, groups = "positive")
     public void register() throws InterruptedException {
         goToRegPage();
 
@@ -31,7 +45,7 @@ public class TC003RegisterAccountPositiveTestCasesTest extends FrameworkScript {
 
         Thread.sleep(3000);
     }
-    @Test(priority = 2)
+    @Test(priority = 2, groups = "negative")
     public void regWithoutAnyData() throws InterruptedException {
         String firstName = null, lastName = null, email = null, password = null, confirmPassword = null;
         long telephoneNo = 0L;
