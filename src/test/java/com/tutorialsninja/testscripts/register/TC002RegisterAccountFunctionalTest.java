@@ -24,7 +24,7 @@ public class TC002RegisterAccountFunctionalTest extends FrameworkScript {
         Thread.sleep(3000);
     }
 
-    @Test(priority = 0, groups = "positive")
+    @Test(groups = "positive")
     public void verifyNavigation() throws InterruptedException {
         goToRegPage();
 
