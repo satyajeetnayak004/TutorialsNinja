@@ -143,19 +143,45 @@ public class RegistrationPage {
             try {
                 if (warningMessage != null)
                     messageData.put("warningMessage", warningMessage.getText());
-                if (firstNameErrorMessage.isEnabled())
+            } catch (NoSuchElementException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                if (firstNameErrorMessage != null)
                     messageData.put("firstNameErrorMessage", firstNameErrorMessage.getText());
+            } catch (NoSuchElementException e) {
+                e.printStackTrace();
+            }
+
+            try {
                 if (lastNameErrorMessage != null)
                     messageData.put("lastNameErrorMessage", lastNameErrorMessage.getText());
+            } catch (NoSuchElementException e) {
+                e.printStackTrace();
+            }
+
+            try {
                 if (emailAddressErrorMessage != null)
                     messageData.put("emailAddressErrorMessage", emailAddressErrorMessage.getText());
+            } catch (NoSuchElementException e) {
+                e.printStackTrace();
+            }
+
+            try {
                 if (telephoneErrorMessage != null)
                     messageData.put("telephoneErrorMessage", telephoneErrorMessage.getText());
+            } catch (NoSuchElementException e) {
+                e.printStackTrace();
+            }
+
+            try {
                 if (passwordErrorMessage != null)
                     messageData.put("passwordErrorMessage", passwordErrorMessage.getText());
             } catch (NoSuchElementException e) {
                 e.printStackTrace();
             }
+
         }
         return messageData;
     }

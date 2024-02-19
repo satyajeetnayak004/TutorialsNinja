@@ -17,7 +17,7 @@ public class TC003LoginWithValidCredentialTest extends FrameworkScript {
         Thread.sleep(3000);
 
         Header header = new Header(driver);
-        header.clickOnLoginOption();
+        header. clickOnLoginOption();
 
         Thread.sleep(3000);
 
