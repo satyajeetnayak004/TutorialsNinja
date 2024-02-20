@@ -1,5 +1,6 @@
 package com.tutorialsninja.pages;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,13 +36,15 @@ public class LoginPage {
     private WebElement forgottenPasswordLink = null;
     @FindBy(xpath = "//input[@value='Login']")
     private WebElement loginBtn = null;
-    @FindBy(xpath = "//a[@title='My Account']")
-    private WebElement myAccount = null;
-    @FindBy(linkText = "Logout")
-    private WebElement logoutOption = null;
+    @FindBy(className = "alert-dismissible")
+    private WebElement warningMessage = null;
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
+    }
+
+    public static LoginPage getLoginPageObj(WebDriver driver) {
+        return new LoginPage(driver);
     }
 
     public Map<String, String> fetchLoginPageUIData() {
@@ -61,15 +64,29 @@ public class LoginPage {
         return loginData;
     }
 
-    public void login(String userName, String password) {
-        emailTxtField.sendKeys(userName);
-        passwordTxtField.sendKeys(password);
+    public Map<String, String> login(WebDriver driver, String userName, String password) {
+        Map<String, String> messageData = new HashMap<>();
+        if(userName != null && !userName.isEmpty() && !userName.equals(" "))
+            emailTxtField.sendKeys(userName);
+        if(password != null && !password.isEmpty() && !password.equals(" "))
+            passwordTxtField.sendKeys(password);
         loginBtn.click();
-    }
 
-    public void logout() {
-        myAccount.click();
-        logoutOption.click();
+        /* Verify that whether user able to register or not */
+        if (driver.getTitle().contains("My Account")) {
+            System.out.println("Logged in Successfully!");
+            messageData.put("Page Title", driver.getTitle());
+        } else {
+            System.out.println("Something went wrong!");
+            try {
+                if (warningMessage != null)
+                    messageData.put("warningMessage", warningMessage.getText());
+            } catch (NoSuchElementException e) {
+                System.out.println("No Warning Message!");
+            }
+
+        }
+        return messageData;
     }
 
     // Verify the navigation of all links available on Login page

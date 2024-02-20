@@ -11,11 +11,9 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 public class TC002LoginFunctionalTest extends FrameworkScript {
-    public LoginPage getLoginPageObj() {
-        return new LoginPage(driver);
-    }
     public void goToLoginPage() throws InterruptedException {
         driver.get("https://tutorialsninja.com/demo/");
 
@@ -30,7 +28,7 @@ public class TC002LoginFunctionalTest extends FrameworkScript {
     public void verifyNavigation() throws InterruptedException {
         goToLoginPage();
 
-        List<String> linksData = getLoginPageObj().verifyLoginPageLinksNavigation(driver);
+        List<String> linksData = LoginPage.getLoginPageObj(driver).verifyLoginPageLinksNavigation(driver);
         System.out.println(linksData);
 
         // Verify Navigation Data
@@ -44,14 +42,10 @@ public class TC002LoginFunctionalTest extends FrameworkScript {
         else
             goToLoginPage();
 
-        getLoginPageObj().login(userName, password);
-
-        Thread.sleep(2000);
-
-        if(driver.getCurrentUrl().contains("route=account/account"))
-            getLoginPageObj().logout();
-        else
-            System.out.println("Something went wrong, please check username and password!");
+        Map<String, String> data = LoginPage.getLoginPageObj(driver).login(driver, userName, password);
+        System.out.println(data);
+        Header header = new Header(driver);
+        header.clickOnLogoutOption();
     }
 
     @Test(priority = 2)
@@ -61,14 +55,8 @@ public class TC002LoginFunctionalTest extends FrameworkScript {
         else
             goToLoginPage();
 
-        getLoginPageObj().login("", "");
-
-        Thread.sleep(2000);
-
-        if(driver.getCurrentUrl().contains("route=account/account"))
-            getLoginPageObj().logout();
-        else
-            System.out.println("Something went wrong, please check username and password!");
+        Map<String, String> data = LoginPage.getLoginPageObj(driver).login(driver, "", "");
+        System.out.println(data);
     }
 
     @DataProvider(name = "getTestData")

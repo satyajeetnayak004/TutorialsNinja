@@ -1,5 +1,6 @@
 package com.tutorialsninja.pages;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,6 +29,8 @@ public class Header {
     private WebElement registerLink = null;
     @FindBy(linkText = "Login")
     private WebElement loginLink = null;
+    @FindBy(linkText = "Logout")
+    private WebElement logoutLink = null;
     @FindBy(xpath = "//span[text()='Wish List (0)']")
     private WebElement wishListLink = null;
     @FindBy(xpath = "//span[text()='Shopping Cart']")
@@ -170,5 +173,14 @@ public class Header {
     public void clickOnLoginOption() {
         clickOnMyAccount();
         loginLink.click();
+    }
+
+    public void clickOnLogoutOption() {
+        clickOnMyAccount();
+        try {
+            logoutLink.click();
+        } catch (NoSuchElementException e) {
+            System.out.println("Please check username and password");
+        }
     }
 }

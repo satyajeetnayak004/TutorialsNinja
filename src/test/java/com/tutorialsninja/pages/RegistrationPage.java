@@ -129,9 +129,9 @@ public class RegistrationPage {
             noOptionRadio.click();
         if (privacyPolicy)
             privacyPolicyCheckbox.click();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         continueBtn.click();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
 
         /* Verify that whether user able to register or not */
         if (driver.getTitle().contains("Your Account Has Been Created!")) {

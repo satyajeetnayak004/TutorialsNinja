@@ -44,13 +44,11 @@ public class TC002RegisterAccountFunctionalTest extends FrameworkScript {
             driver.navigate().to("https://tutorialsninja.com/demo/index.php?route=account/register");
         else
             goToRegPage();
-
         long telNo = Long.parseLong(telephoneNo.replaceAll("\\D", ""));
         boolean sub = Boolean.parseBoolean(subscribe.toLowerCase());
         boolean privacy = Boolean.parseBoolean(privacyPolicy.toLowerCase());
 
         Map<String, String> data = getRegPageObj().register(driver, firstName, lastName, email, telNo, password, confirmPassword, sub, privacy);
-
         System.out.println(data);
     }
 
