@@ -19,12 +19,12 @@ public class TC002RegisterAccountFunctionalTest extends FrameworkScript {
     public void goToRegPage() throws InterruptedException {
         driver.get("https://tutorialsninja.com/demo/");
 
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         Header header = new Header(driver);
         header.clickOnRegistrationOption();
 
-        Thread.sleep(2000);
+        Thread.sleep(1000);
     }
 
     @Test(groups = "positive")
@@ -52,8 +52,6 @@ public class TC002RegisterAccountFunctionalTest extends FrameworkScript {
         Map<String, String> data = getRegPageObj().register(driver, firstName, lastName, email, telNo, password, confirmPassword, sub, privacy);
 
         System.out.println(data);
-
-        Thread.sleep(3000);
     }
 
     @DataProvider(name = "getRegTestData")
