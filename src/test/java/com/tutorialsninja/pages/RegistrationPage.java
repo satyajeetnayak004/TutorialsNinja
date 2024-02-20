@@ -144,42 +144,42 @@ public class RegistrationPage {
                 if (warningMessage != null)
                     messageData.put("warningMessage", warningMessage.getText());
             } catch (NoSuchElementException e) {
-                e.printStackTrace();
+                System.out.println("No Warning Message!");
             }
 
             try {
                 if (firstNameErrorMessage != null)
                     messageData.put("firstNameErrorMessage", firstNameErrorMessage.getText());
             } catch (NoSuchElementException e) {
-                e.printStackTrace();
+                System.out.println("No Error Message for First Name!");
             }
 
             try {
                 if (lastNameErrorMessage != null)
                     messageData.put("lastNameErrorMessage", lastNameErrorMessage.getText());
             } catch (NoSuchElementException e) {
-                e.printStackTrace();
+                System.out.println("No Error Message for Last Name!");
             }
 
             try {
                 if (emailAddressErrorMessage != null)
                     messageData.put("emailAddressErrorMessage", emailAddressErrorMessage.getText());
             } catch (NoSuchElementException e) {
-                e.printStackTrace();
+                System.out.println("No Error Message for Email Address!");
             }
 
             try {
                 if (telephoneErrorMessage != null)
                     messageData.put("telephoneErrorMessage", telephoneErrorMessage.getText());
             } catch (NoSuchElementException e) {
-                e.printStackTrace();
+                System.out.println("No Error Message for Telephone Number!");
             }
 
             try {
                 if (passwordErrorMessage != null)
                     messageData.put("passwordErrorMessage", passwordErrorMessage.getText());
             } catch (NoSuchElementException e) {
-                e.printStackTrace();
+                System.out.println("No Error Message for Password!");
             }
 
         }
