@@ -1,13 +1,11 @@
  package com.tutorialsninja.testscripts.home;
 
-import com.tutorialsninja.core.FrameworkScript;
-import com.tutorialsninja.pages.Header;
-import com.tutorialsninja.pages.HomePage;
-import com.tutorialsninja.pages.LoginPage;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+ import com.tutorialsninja.core.FrameworkScript;
+ import com.tutorialsninja.pages.HomePage;
+ import org.testng.Assert;
+ import org.testng.annotations.Test;
 
-import java.util.Map;
+ import java.util.Map;
 
 public class TC001ValidateUIDataOfHomePageTest extends FrameworkScript {
     @Test

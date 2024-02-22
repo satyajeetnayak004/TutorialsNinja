@@ -1,14 +1,11 @@
 package com.tutorialsninja.pages;
 
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class HomePage {
@@ -32,12 +29,5 @@ public class HomePage {
         loginData.put("heroSectionSliderImg2", heroSectionSliderImg2.getAttribute("src"));
 
         return loginData;
-    }
-
-    // Verify the navigation of all links available on Login page
-    public List<String> verifyHomePageLinksNavigation(WebDriver driver) throws InterruptedException {
-        List<String> linksData = new ArrayList<>();
-
-        return linksData;
     }
 }
